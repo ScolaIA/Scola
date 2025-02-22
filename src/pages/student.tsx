@@ -23,11 +23,7 @@ export default function Student() {
     },
   ];
 
-  const classes = [
-    {
-      ""
-    }
-  ]
+  const classes = [{}];
 
   const [selectedCategory, setSelectedCategory] = useState(categories[0].name);
 
