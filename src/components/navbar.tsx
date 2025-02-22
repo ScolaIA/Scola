@@ -13,15 +13,32 @@ export default function Navbar() {
       </Link>
       {/* Links */}
       <ul className="flex space-x-4">
-            <li>
-              <Link to={"/decouvrir"} className="uppercase border rounded-full px-4 py-1 text-xs border-black ">Découvrir Scola</Link>
-            </li>
-            <li>
-              <Link to={"/a-propos"} className="uppercase border rounded-full px-4 py-1 text-xs border-black ">À propos</Link>
-            </li>
-    
+        <li>
+          <Link
+            to={"/decouvrir"}
+            className="uppercase border rounded-full px-4 py-1 text-xs border-black "
+          >
+            Découvrir Scola
+          </Link>
+        </li>
+        <li>
+          <Link
+            to={"/a-propos"}
+            className="uppercase border rounded-full px-4 py-1 text-xs border-black "
+          >
+            À propos
+          </Link>
+        </li>
       </ul>
-          <Link className={cn(buttonVariants({ variant: "default" }), "px-4 py-1 duration-200 text-xs transition-all rounded-full bg-[#81DFEF] hover:bg-[#81deef74] text-black font-normal uppercase" )} to={pathnames.student}>Connexion</Link>
+      <Link
+        className={cn(
+          buttonVariants({ variant: "default" }),
+          "px-4 py-1 duration-200 text-xs transition-all rounded-full bg-[#81DFEF] hover:bg-[#81deef74] text-black font-normal uppercase"
+        )}
+        to={pathnames.student}
+      >
+        Connexion
+      </Link>
     </nav>
-  )
+  );
 }
